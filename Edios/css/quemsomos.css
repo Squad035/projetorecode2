@@ -1,0 +1,185 @@
+#home{
+	background-image: linear-gradient(to right,#F27121,#E94057,#8A2387);
+	color: white;
+	font-weight: 600;
+}
+
+.navbar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-image: linear-gradient(to right,#F27121,#E94057,#8A2387);
+	padding: 0 !important;
+}
+
+.navbar-nav li a {
+	font-weight: 600;
+	float: rigth;
+	text-align: left;
+}
+
+
+.caixa {
+	
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+footer p a {
+	margin: 5px 15px;
+}
+
+.imginicio{
+width: 600px;
+}
+.bottom-img{
+	width: 100%;
+}
+.title::before{
+		content:'';
+		background: #E94057;
+		height: 5px;
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		transform: translateY(63px);
+		color: blue;
+}
+
+.title::after{
+		content:'' ;
+		background: #E94057;
+		height: 10px;
+		width: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+		display: block;
+		transform: translateY(8px);
+		color: blue;
+
+	}
+
+.missao-img{
+width: 600px;
+}
+
+.bottom-img{
+	width: 100%;
+}
+
+.missao{
+	padding: 20px;
+}
+.missao p{
+	padding: 5px;
+	margin-top: 25PX;
+	text-align: center;
+}
+
+/*SEGUNDA SECTION */
+.content-col{
+    width: 40%;
+}
+
+.content-col h1{
+    
+    font-size: 6vmin;
+}
+.content-col .line{
+    margin-left: -1;
+}
+
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+
+
+
+.image-col{
+    width: 60%;
+}
+
+.porque .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img{
+    max-width: 230px;
+    margin: 10px;
+    border-radius: 2%;  
+}
+
+/*animaçoes*/
+
+.image-gallery img{
+    transition: transform .3s ease;
+}
+
+.image-gallery img:hover{
+    transform: scale(1.1);
+}
+.porque{
+    width:80%;
+    margin: 80px auto;
+}
+
+
+#footer{
+	background-image: linear-gradient(to right,#F27121,#E94057,#8A2387);
+	color: #fff;
+}
+
+.footer-img{
+	width: 100%;
+}
+
+.footer-box{
+	padding: 20px;
+}
+
+.footer-box img{
+	 width: 200px;
+	 margin-bottom: 20px;
+}
+
+.footer-box .fa{
+	margin-right: 8px;
+	font-size: 25px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	padding-top: 2 px;
+	border-radius: 2px;
+	background-image: linear-gradient(to right,#F27121,#E94057,#8A2387);
+}
+
+.footer-box .form-control{
+	box-shadow: none!important;
+	border: none;
+	margin-top: 25px;
+	max-width: 250px;
+}
+
+.footer-box .btn-primary{
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	margin-top: 30px;
+	background-image: linear-gradient(to right,#F27121,#E94057,#8A2387);
+}
+
+hr{
+	background-color: white;
+}
+.copyright{
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	text-align: center;
+}
