@@ -1,0 +1,83 @@
+package controller;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import model.Doador;
+import util.Conexao;
+
+public class DoadorController {
+
+	Connection conn = null;
+	PreparedStatement pstm = null;
+	
+	
+	public void save(Doador doador) {
+
+		String sql = "INSERT INTO doador(nome,email)" + " VALUES(?,?)";
+
+		try {
+
+			conn = Conexao.createConnectionToMySQL();
+
+			pstm = conn.prepareStatement(sql);
+
+			pstm.setString(1, doador.getNome());
+			pstm.setString(2, doador.getEmail());
+			pstm.execute();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		} finally {
+
+			try {
+				if (pstm != null) {
+					pstm.close();
+				}
+				if (conn != null) {
+					conn.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	
+	public void removeById(int id) {
+
+		String sql = "DELETE FROM doador WHERE id = ?";
+
+		try {
+			conn = Conexao.createConnectionToMySQL();
+
+			pstm = conn.prepareStatement(sql);
+
+			pstm.setInt(1, id);
+
+			pstm.execute();
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		} finally {
+
+			try {
+				if (pstm != null) {
+
+					pstm.close();
+				}
+
+				if (conn != null) {
+					conn.close();
+				}
+
+			} catch (Exception e) {
+
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

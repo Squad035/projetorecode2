@@ -1,0 +1,35 @@
+package view;
+
+import java.util.Scanner;
+
+import controller.DoadorController;
+import model.Doador;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		Doador d = new Doador();
+		DoadorController dc = new DoadorController();
+		
+//		
+//		System.out.println("Digite o seu nome");
+//		d.setNome(entrada.nextLine());
+//		
+//		System.out.println("Digite o seu email");
+//		d.setEmail(entrada.nextLine());
+//		
+//		dc.save(d);
+		
+		
+		
+		System.out.println("Informe o usuário que deseja excluir");
+		
+		d.setId_doador(entrada.nextInt());
+		dc.removeById(1);
+		
+		entrada.close();
+	}
+}
