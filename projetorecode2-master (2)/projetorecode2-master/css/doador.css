@@ -1,5 +1,5 @@
 #home{
-    background: linear-gradient(to right,#ffc107,#F27121);
+    background: linear-gradient(to right,#5348b9,#8A2387,#F27121);
     color: white;
     font-weight: 600;
 }
@@ -8,7 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background-image: linear-gradient(to right,#ffc107,#F27121);
+    background-image: linear-gradient(to right,#5348b9,#8A2387,#F27121);
     padding: 0 !important;
 }
 

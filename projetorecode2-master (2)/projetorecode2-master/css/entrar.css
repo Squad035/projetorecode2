@@ -150,9 +150,7 @@ hr{
     padding-bottom: 20px;
     text-align: center;
 }
-
-@media (max-width: 333px){
-  .tamanho{
-    min
+.tamanho{
+@media (max-width: 333px){ 
   }
 }
